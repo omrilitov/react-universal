@@ -1,0 +1,10 @@
+'use strict';
+
+import {{properCase name}} from '../../api/{{name}}/{{name}}.model';
+
+export default () => {{properCase name}}.remove({})
+  .exec()
+  .then(() => {{properCase name}}.create([{
+    name: 'Cool {{name}}'
+  }]
+));
